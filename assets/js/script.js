@@ -21,6 +21,7 @@ const addEventOnElements = function (elements, eventType, callback) {
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
+const navLinks = document.querySelectorAll(".navbar-link");
 
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
@@ -28,8 +29,18 @@ const toggleNavbar = function () {
   document.body.classList.toggle("nav-active");
 }
 
+// Close the navbar when a section (nav link) is clicked
+const closeNavbar = function () {
+  navbar.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.classList.remove("nav-active");
+};
+
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
+navLinks.forEach(link => {
+  link.addEventListener("click", closeNavbar);
+});
 
 
 /**
@@ -46,6 +57,34 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
+
+
+/**
+ * service section
+ * add effect to the site 
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  const serviceSection = document.querySelector('#service-section');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active'); // Add 'active' class when in view
+      }
+    });
+  }, { threshold: 0.1 });
+
+  observer.observe(serviceSection);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const serviceSection = document.querySelector('#service-section');
+  triggerButton.addEventListener('click', () => {
+    serviceSection.classList.add('active'); // Add 'active' class on click
+  });
+});
+
 
 
 

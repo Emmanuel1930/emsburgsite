@@ -336,11 +336,13 @@ body.nav-active { overflow: hidden; }
   z-index: 2;
   visibility: hidden;
   transition: var(--transition-3);
+  transition: visibility 0s linear 0.3s, transform 0.3s ease-in-out;
 }
 
 .navbar.active {
   visibility: visible;
   transform: translateX(300px);
+  transition: visibility 0s linear 0s, transform 0.3s ease-in-out;
 }
 
 .navbar-top {
@@ -494,7 +496,15 @@ body.nav-active { overflow: hidden; }
   #SERVICE
 \*-----------------------------------*/
 
-.service { text-align: center; }
+.service { 
+  text-align: center; 
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.service.active {
+  opacity: 1; /* Fully visible when active */
+}
 
 .service .section-title { margin-block-end: 50px; }
 
