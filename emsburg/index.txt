@@ -1,0 +1,177 @@
+#---------- HEADER ----------#
+
+alt = Emsburg Energy home
+
+aria-label = close menu
+<ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+
+Home
+About
+Services
+Projects
+Contact
+info@emsburgenergy.com
+00 (123) 456 78 90
+
+<ion-icon name="logo-linkedin"></ion-icon>
+<ion-icon name="logo-facebook"></ion-icon>
+<ion-icon name="logo-twitter"></ion-icon>
+<ion-icon name="logo-instagram"></ion-icon>
+
+Free Consultation
+
+aria-label = open menu
+<ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+
+#---------- HERO ----------#
+
+Powering Sustainable Energy Solutions.
+
+At Emsburg Energy, we deliver innovative solutions for energy efficiency, renewable power, and environmental sustainability.
+
+Explore Now
+Contact Us
+
+alt = hero banner
+
+aria-label = play company intro
+<ion-icon name="play" aria-hidden="true"></ion-icon>
+
+aria-label = slide to previous
+<ion-icon name="arrow-back"></ion-icon>
+
+aria-label = slide to next
+<ion-icon name="arrow-forward"></ion-icon>
+
+#---------- SERVICE ----------#
+
+What We Do?
+
+Our services are designed to power your future with cutting-edge energy solutions.
+
+<ion-icon name="flash-outline" aria-hidden="true"></ion-icon>
+Energy Efficiency
+Maximizing energy usage through smart technologies and innovative solutions for businesses and homes.
+
+Learn More
+<ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+
+<ion-icon name="leaf-outline" aria-hidden="true"></ion-icon>
+Renewable Energy
+Offering solar, wind, and alternative energy solutions for a sustainable future.
+
+<ion-icon name="bulb-outline" aria-hidden="true"></ion-icon>
+Consulting & Strategy
+Tailored strategies to enhance energy performance and reduce costs.
+
+<ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+Environmental Impact Analysis
+
+#---------- ABOUT ----------#
+
+alt = about banner
+
+Why Choose Us?
+
+We deliver innovative and sustainable energy solutions tailored to our clients' unique needs.
+
+<ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+Industry Expertise
+Our team brings decades of experience to provide the highest standard of service in the energy sector.
+
+Customer-Centric Solutions
+We work closely with our clients to ensure their energy goals are met efficiently.
+
+Sustainable Impact
+
+#---------- FEATURE ----------#
+
+alt = feature banner
+
+Our Expertise
+
+Leading the way in energy solutions that support a greener, more sustainable future.
+
+Renewable Energy Projects
+Carbon Footprint Reduction Initiatives
+Strategic Energy Consulting
+Environmental Risk Assessments
+<ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+Industry-leading solutions for businesses and homes.
+
+#---------- STATS ----------#
+
+500+
+Completed Projects
+
+300+
+Happy Clients
+
+150+
+Renewable Energy Installations
+
+200+
+Corporate Partnerships
+
+#---------- PROJECTS ----------#
+
+Case Studies
+
+Explore some of our transformative projects.
+
+alt = Solar farm installation
+
+Solar Farm for Renewable Energy
+We developed a large-scale solar farm to supply sustainable energy to thousands of homes.
+
+<ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+12 May 2023
+
+<ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+Renewable Energy
+
+alt = Energy efficiency upgrade
+
+Energy Efficiency for Corporate Buildings
+Upgraded energy systems for efficiency and cost savings in office buildings.
+
+alt = Wind power installation
+
+Wind Power Project in the Midwest
+Implemented wind turbines to harness renewable energy in rural communities.
+
+#---------- CTA ----------#
+
+Join us on our mission to create a sustainable energy future.
+
+Request a Free Consultation
+
+#---------- FOOTER ----------#
+
+alt = Emsburg Energy home
+© 2024 Emsburg Energy. All rights reserved.
+
+<ion-icon name="logo-linkedin"></ion-icon>
+<ion-icon name="logo-facebook"></ion-icon>
+<ion-icon name="logo-twitter"></ion-icon>
+<ion-icon name="logo-instagram"></ion-icon>
+
+Get in Touch
+Green Street 15, Power City, CA, USA
+
+info@emsburgenergy.com
+00 (123) 456 78 90
+
+Learn More
+About Us
+Our Services
+Projects
+Terms of Use
+Privacy Policy
+#---------- NEWSLETTER ----------#
+
+Subscribe to our newsletter for the latest updates in energy solutions.
+
+placeholder = Email Address
+Join
+
