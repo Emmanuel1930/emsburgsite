@@ -443,8 +443,6 @@ body.nav-active { overflow: hidden; }
   animation: pulse 2s ease infinite;
 }
 
-.hero-card .play-btn:is(:hover, :focus-visible) { color: var(--dark-blackish); }
-
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 var(--white_a70); }
   75% { box-shadow: 0 0 0 20px transparent; }
