@@ -740,7 +740,7 @@ body.nav-active { overflow: hidden; }
 .footer {
   background-color: var(--pronouced-green);
   padding-block: 60px 100px;
-  color: var(--lavender-web);
+  color: var(--white);
 }
 
 .footer-brand .footer-text { margin-block: 20px; }
