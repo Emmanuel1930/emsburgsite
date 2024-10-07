@@ -37,6 +37,8 @@
   --blue-crayola: hsla(219, 72%, 56%, 1);
   --black-coral: hsla(220, 12%, 43%, 1);
   --combined-green: hsla(96, 70%, 35%, 1);
+  --slight-green: hsla(200, 30%, 26%, 1);
+  --pronouced-green:hsla(180, 30%, 26%, 1);
 
 
   /**
@@ -699,7 +701,7 @@ body.nav-active { overflow: hidden; }
   #CTA
 \*-----------------------------------*/
 
-.cta { background-color: var(--charcoal); }
+.cta { background-color: var(--pronouced-green); }
 
 .cta .container {
   padding-block: 100px 60px;
@@ -726,9 +728,9 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--charcoal);
+  background-color: var(--pronouced-green);
   padding-block: 60px 100px;
-  color: var(--light-gray);
+  color: var(--lavender-web);
 }
 
 .footer-brand .footer-text { margin-block: 20px; }
