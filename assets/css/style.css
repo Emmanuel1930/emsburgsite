@@ -709,7 +709,7 @@ body.nav-active { overflow: hidden; }
   #CTA
 \*-----------------------------------*/
 
-.cta { background-color: var(--pronouced-green); }
+.cta { background-color: var(--dark-blackish); }
 
 .cta .container {
   padding-block: 100px 60px;
@@ -736,7 +736,7 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--pronouced-green);
+  background-color: var(--dark-blackish);
   padding-block: 60px 100px;
   color: var(--white);
 }
