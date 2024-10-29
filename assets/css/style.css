@@ -39,6 +39,7 @@
   --combined-green: hsla(96, 70%, 35%, 1);
   --slight-green: hsla(200, 30%, 26%, 1);
   --pronouced-green:hsla(180, 30%, 26%, 1);
+  --dark-cornflower-blue: hsla(214, 88%, 27%, 1);
 
 
   /**
@@ -113,7 +114,7 @@ li { list-style: none; }
 a,
 img,
 span,
-input,
+
 button,
 ion-icon { display: block; }
 
@@ -124,14 +125,14 @@ a {
 
 img { height: auto; }
 
-input,
+
 button {
   background: none;
   border: none;
   font: inherit;
 }
 
-input { width: 100%; }
+
 
 button { cursor: pointer; }
 
@@ -643,19 +644,130 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #STATS
 \*-----------------------------------*/
-
-.stats { background-image: linear-gradient(to bottom, var(--white) 50%, var(--cultured) 50%); }
-
-.stats-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  gap: 36px 24px;
-  padding: 45px 30px;
-  border-radius: var(--radius-8);
+/* Styling for the container heading */
+#contact-heading {
+  font-size: 2em; /* Larger font size for emphasis */
+  color: var(--combined-green);
+  text-align: center; /* Center aligns the heading */
+  font-weight: 600; /* Slightly bolder weight for emphasis */
+  margin-bottom: 10px; /* Space below heading */
+  padding-top: 15px; /* Optional: add space above */
+  font-family: 'Arial', sans-serif; /* Clean, professional font */
 }
 
-.stats-card .card-text > * { color: var(--white); }
+/* Styling for the horizontal rule (hr) */
+.emsburg-input-wrapper hr {
+  border: none; /* Remove default border */
+  border-top: 2px solid var(--dark-cornflower-blue_a7); /* Custom color */
+  width: 60%; /* Narrow width for a modern look */
+  margin: 10px auto; /* Center the hr with top/bottom margin */
+  opacity: 0.7; /* Slight transparency for a softer look */
+}
+
+
+
+/* Center the content using text alignment */
+.emsburg-center {
+  width: 100%; /* Full width of the container */
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Optional horizontal padding */
+  text-align: center; /* Center-align text and inline-block elements */
+}
+
+/* Style for the contact form input fields */
+.emsburg-input-field-wrapper {
+  width: 85%; /* Width for input fields */
+  max-width: 100%; /* Ensures it stretches to container width */
+  margin: 0 auto 15px; /* Center the wrapper and adds spacing */
+   padding: 0.5em 1.5em; /* Padding for a balanced look */
+}
+
+.emsburg-input-field {
+  width: 100%; /* Full width */
+  height: 60px; /* Height of input fields */
+  border: 1px solid var(--dark-cornflower-blue_a7);
+  border-radius: var(--radius-6);
+  box-shadow: var(--shadow-3);
+  padding-left: 16px;
+  font-weight: 200;
+  color: var(--light-gray);
+  background-color: var(--white_a3);
+  outline: none;
+  font-size: 1.2em; /* Font size for input fields */
+  transition: all 0.3s ease;
+}
+
+/* Apply these specific styles to the textarea only */
+.emsburg-input-field-wrapper textarea {
+  width: 90%; /* Adjusted width */
+  height: 140px; /* Set height as specified */
+  padding-top: 15px; /* Top padding for spacing within the textarea */
+  padding: 12px 16px; /* Additional padding for consistency */
+  font-size: 1.0em; /* Font size adjustment */
+  resize: none; /* Disable resizing */
+  border: 1px solid var(--dark-cornflower-blue_a7); /* Border color */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: var(--shadow-3); /* Optional shadow for depth */
+  background-color: var(--white_a3); /* Background color */
+  color: var(--light-gray); /* Text color */
+  outline: none; /* Removes outline on focus */
+  overflow-y: auto; /* Enables vertical scrolling within the textarea */
+  scrollbar-width: thin; /* For Firefox: thin scrollbar */
+  scrollbar-color: var(--dark-cornflower-blue_a7) var(--white_a3); /* Custom scrollbar colors */
+}
+
+/* Custom scrollbar styling for Webkit browsers (Chrome, Safari) */
+.emsburg-input-field-wrapper textarea::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.emsburg-input-field-wrapper textarea::-webkit-scrollbar-thumb {
+  background-color: var(--dark-cornflower-blue_a7); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded scrollbar for a softer look */
+}
+
+.emsburg-input-field-wrapper textarea::-webkit-scrollbar-track {
+  background-color: var(--white_a3); /* Color of the scrollbar track */
+}
+
+
+
+
+/* Button styles */
+.emsburg-submit-bt {
+  display: inline-block; /* Ensure button behaves like a block */
+  padding: 0.8em 1.5em; /* Padding for a balanced look */
+  font-size: 1.1em; /* Slightly larger font for better readability */
+  font-weight: 600; /* Bolder text for emphasis */
+  color: #fff; /* Change to white for better contrast */
+  background: linear-gradient(135deg, #3da35d 70%, var(--dark-cornflower-blue) 100%);
+
+  border: none;
+  border-radius: 30px; /* More rounded for a modern look */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  margin-top: 1.2em; /* Space above button */
+  margin-bottom: 1.2em; /* Space below button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.emsburg-submit-bt:hover {
+  background: linear-gradient(135deg, #3da35d, #0056b3); /* Changes gradient on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .emsburg-input-field-wrapper {
+    width: 90%; /* Wider input fields on mobile */
+  }
+
+  .emsburg-center {
+    padding: 0 10px; /* Reduce padding on smaller screens */
+  }
+}
 
 
 
@@ -753,38 +865,6 @@ body.nav-active { overflow: hidden; }
 .footer-link {
   padding-block: 4px;
   transition: var(--transition-1);
-}
-
-.footer-link:is(:hover, :focus-visible) { color: var(--combined-green); }
-
-.input-wrapper {
-  position: relative;
-  margin-block-start: 25px;
-}
-
-.input-field {
-  background-color: var(--white_a3);
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  padding: 12px 16px;
-  border: 1px solid var(--dark-cornflower-blue_a7);
-  border-radius: var(--radius-6);
-  box-shadow: var(--shadow-3);
-  outline: none;
-}
-
-.input-field::placeholder { color: inherit; }
-
-.submit-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 0 var(--radius-6) var(--radius-6) 0;
-  background-color: var(--combined-green);
-  color: var(--white);
-  padding-inline: 24px;
-  font-weight: var(--fw-700);
 }
 
 
@@ -999,15 +1079,7 @@ body.nav-active { overflow: hidden; }
   }
 
   .btn-wrapper { justify-content: flex-start; }
-
-
-
-  /**
-   * STATS
-   */
-
-  .stats-card { grid-template-columns: repeat(4, 1fr); }
-
+  
 
 
   /**
@@ -1021,22 +1093,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * CTA
-   */
-
-  .cta .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .cta .btn { min-width: max-content; }
-
-  .cta .section-title {
-    max-width: 30ch;
-    margin-block-end: 0;
-  }
 
 
 
@@ -1082,15 +1138,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * STATS
-   */
-
-  .stats .container { max-width: 70%; }
-
-  .stats-card { padding: 60px; }
-
-
 
   /**
    * PROJECT
@@ -1111,7 +1158,24 @@ body.nav-active { overflow: hidden; }
 
 }
 
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+  .emsburg-input-field-wrapper textarea {
+    width: 100%; /* Adjust width for mobile */
+    padding: 10px 12px; /* Reduce padding for mobile */
+    scrollbar-width: none; /* Hide scrollbar on Firefox mobile */
 
+    /* Adjust scrollbar for Webkit browsers on mobile */
+  }
+  .emsburg-input-field-wrapper textarea::-webkit-scrollbar {
+    width: 4px; /* Thinner scrollbar for mobile */
+  }
+
+  .emsburg-input-field-wrapper textarea::-webkit-scrollbar-thumb {
+    background-color: var(--dark-cornflower-blue_a7); /* Keep thumb color consistent */
+    border-radius: 8px; /* Adjust border-radius */
+  }
+}
 
 
 
@@ -1135,4 +1199,10 @@ body.nav-active { overflow: hidden; }
 
   .feature-list { grid-template-columns: 1fr 1fr; }
 
+}
+@media (max-width: 600px) {
+  #contact-heading {
+    font-size: 1.8em;
+    padding: 10px 0; /* Reduces padding for smaller screens */
+  }
 }
