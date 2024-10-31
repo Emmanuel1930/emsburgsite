@@ -411,13 +411,25 @@ body.nav-active { overflow: hidden; }
   gap: 70px;
 }
 
-.hero-title { color: var(--white); }
-
-.hero-text {
-  font-size: var(--fs-5);
+/* Make the text more readable by adding shadow */
+.hero-title, .hero-text {
   color: var(--white);
-  margin-block: 24px 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease-in-out;
 }
+
+/* 3D effect on hover */
+.hero-title:hover, .hero-text:hover {
+  transform: perspective(500px) translateZ(10px);
+}
+
+/* Parallax effect for hero background */
+.hero {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 
 .btn-wrapper {
   display: flex;
@@ -427,8 +439,20 @@ body.nav-active { overflow: hidden; }
   gap: 12px;
 }
 
-.hero-slider,
-.hero-card { position: relative; }
+/* Add float animation to call-to-action button */
+.btn-primary {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
 
 .hero-card .play-btn {
   position: absolute;
@@ -481,7 +505,7 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.hero .slider-btn:is(:hover, :focus-visible) { background-color: var(--white); }
+
 
 .hero .slider-btn.prev { left: 20px; }
 
