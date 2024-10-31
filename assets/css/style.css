@@ -765,7 +765,7 @@ body.nav-active { overflow: hidden; }
   font-size: 1.1em; /* Slightly larger font for better readability */
   font-weight: 600; /* Bolder text for emphasis */
   color: #fff; /* Change to white for better contrast */
-  background: linear-gradient(135deg, #3da35d 70%, var(--dark-cornflower-blue) 100%);
+  background-color: var(--combined-green);
 
   border: none;
   border-radius: 30px; /* More rounded for a modern look */
